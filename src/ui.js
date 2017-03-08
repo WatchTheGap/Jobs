@@ -1,4 +1,4 @@
-(function() {
+(function ui() {
 // ********
 window.jobApp = window.jobApp || {};
 
@@ -34,6 +34,11 @@ Array.from(document.querySelectorAll("[name=languages]")).forEach(function check
     e.target.parentNode.parentNode.childNodes[7].innerText = languageCount + " languages";
   });
 });
+
+document.querySelector("form")
+  .addEventListener("submit", function stopSubmit(e) {
+    e.preventDefault();
+  });
 
 // ********
   // ;

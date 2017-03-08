@@ -16,7 +16,7 @@ window.jobApp = window.jobApp || {};
 
 document.querySelector("#exp").addEventListener("change", function updateXp(e) {
   console.log("CHANGE TEST");
-  e.target.innerText = e.target.value + " years";
+  e.target.parentNode.childNodes[3].innerText = e.target.value + " years";
 
 });
 
@@ -31,6 +31,7 @@ Array.from(document.querySelectorAll("[name=languages]")).forEach(function check
       languageCount--;
       console.log(languageCount);
     }
+    e.target.parentNode.parentNode.childNodes[7].innerText = languageCount + " languages";
   });
 });
 

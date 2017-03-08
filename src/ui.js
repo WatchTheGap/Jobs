@@ -13,7 +13,11 @@ window.jobApp = window.jobApp || {};
       }
 });
 
+document.querySelector("#exp").addEventListener("change", function updateXp(e) {
+  console.log("CHANGE TEST");
+  document.querySelector("figure").innerText = document.querySelector("#exp").value + " years";
 
+});
 
 
 

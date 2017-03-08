@@ -6,6 +6,7 @@ window.jobApp = window.jobApp || {};
       console.log("BLUR TEST");
       console.log(document.querySelector("#full-name").value);
       if (document.querySelector("#full-name").value.length === 0) {
+        document.querySelector("#full-name").parentNode.classList.add("has-error");
         console.log("ERROR");
       } else {
         console.log("NO ERROR");
